@@ -116,32 +116,32 @@
 
     <div class="container">
         <div class="color-swatch" style="background-color: #E03E52;" data-hex="#E03E52" onclick="copyHex('#E03E52', this)">
-            <div class="hex-code" onclick="copyHex('#E03E52', this)">#E03E52</div>
+            <div class="hex-code" onclick="copyHex('#E03E52', this.parentNode)">#E03E52</div>
             <div class="color-name">Pink</div>
             <div class="copy-message">Copied!</div>
         </div>
         <div class="color-swatch" style="background-color: #FF7F41;" data-hex="#FF7F41" onclick="copyHex('#FF7F41', this)">
-            <div class="hex-code" onclick="copyHex('#FF7F41', this)">#FF7F41</div>
+            <div class="hex-code" onclick="copyHex('#FF7F41', this.parentNode)">#FF7F41</div>
             <div class="color-name">Orange</div>
             <div class="copy-message">Copied!</div>
         </div>
         <div class="color-swatch" style="background-color: #FFBF3F;" data-hex="#FFBF3F" onclick="copyHex('#FFBF3F', this)">
-            <div class="hex-code" onclick="copyHex('#FFBF3F')">#FFBF3F</div>
+            <div class="hex-code" onclick="copyHex('#FFBF3F', this.parentNode)">#FFBF3F</div>
             <div class="color-name">Yellow</div>
             <div class="copy-message">Copied!</div>
         </div>
         <div class="color-swatch" style="background-color: #A9C23F;" data-hex="#A9C23F" onclick="copyHex('#A9C23F', this)">
-            <div class="hex-code" onclick="copyHex('#A9C23F')">#A9C23F</div>
+            <div class="hex-code" onclick="copyHex('#A9C23F', this.parentNode)">#A9C23F</div>
             <div class="color-name">Green</div>
             <div class="copy-message">Copied!</div>
         </div>
         <div class="color-swatch" style="background-color: #4C9FC8;" data-hex="#4C9FC8" onclick="copyHex('#4C9FC8', this)">
-            <div class="hex-code" onclick="copyHex('#4C9FC8')">#4C9FC8</div>
+            <div class="hex-code" onclick="copyHex('#4C9FC8', this.parentNode)">#4C9FC8</div>
             <div class="color-name">Blue</div>
             <div class="copy-message">Copied!</div>
         </div>
         <div class="color-swatch" style="background-color: #4A3041;" data-hex="#4A3041" onclick="copyHex('#4A3041', this)">
-            <div class="hex-code" onclick="copyHex('#4A3041')">#4A3041</div>
+            <div class="hex-code" onclick="copyHex('#4A3041', this.parentNode)">#4A3041</div>
             <div class="color-name">Purple</div>
             <div class="copy-message">Copied!</div>
         </div>
@@ -162,7 +162,7 @@
                 })
                 .catch(err => {
                     console.error('Failed to copy: ', err);
-                    alert('Failed to copy.  Please copy manually.');
+                    alert('Failed to copy. Please copy manually.');
                 });
         }
     </script>
